@@ -38,7 +38,7 @@ def parse_args():
 
 
 if __name__ == '__main__':
-    
+
     args = parse_args()
     if args.path:
         file_reader = file_parser()
