@@ -56,6 +56,6 @@ if __name__ == '__main__':
         if args.bar_chart:
             calculated_bar_charts_data = weather_calculation.bar_charts_calculation(weather_data, args.bar_chart)
             reports.generate_bar_charts_reports(calculated_bar_charts_data, args.bar_chart)
-            print('\nBonus Task\n')
+            print('Bonus Task\n')
             reports.bonus_task_reports(calculated_bar_charts_data, args.bar_chart)
 
