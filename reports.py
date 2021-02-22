@@ -1,4 +1,3 @@
-
 class reports:
 
     def generate_yearly_report(data):
