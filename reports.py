@@ -17,27 +17,27 @@ class reports:
         )
 
     def generate_bar_charts_reports(data, date):
-        RED = '\033[31m'
-        BLUE = '\033[34m'
+        red = '\033[31m'
+        blue = '\033[34m'
         color_end = '\033[00m'
         print(f'\n{date.strftime("%B")} {date.year}\n')
         for row in data:
             max_temp = '+' * row['max_temp']
             min_temp = '+' * row['min_temp']
             print(
-                f'{row["date"].day} {RED+max_temp+color_end} {row["max_temp"]}C\n'
-                f'{row["date"].day} {BLUE + min_temp + color_end} {row["min_temp"]}C\n'
+                f'{row["date"].day} {red+max_temp+color_end} {row["max_temp"]}C\n'
+                f'{row["date"].day} {blue + min_temp + color_end} {row["min_temp"]}C\n'
             )
 
     def bonus_task_reports(data, date):
-        RED = '\033[31m'
-        BLUE = '\033[34m'
+        red = '\033[31m'
+        blue = '\033[34m'
         color_end = '\033[00m'
         print(f'{date.strftime("%B")} {date.year}\n')
         for row in data:
             max_temp = '+' * row['max_temp']
             min_temp = '+' * row['min_temp']
             print(
-                f'{row["date"].day} {BLUE + min_temp + color_end}'
-                f'{RED + max_temp + color_end} {row["min_temp"]}C - {row["max_temp"]}C \n'
+                f'{row["date"].day} {blue + min_temp + color_end}'
+                f'{red + max_temp + color_end} {row["min_temp"]}C - {row["max_temp"]}C \n'
             )
