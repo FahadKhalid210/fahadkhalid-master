@@ -29,7 +29,7 @@ def validate_month_date(date):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Parse Command Line Arg")
+    parser = argparse.ArgumentParser(description="Process Command Line Arguments")
     parser.add_argument("path", type=is_dir)
     parser.add_argument("-e", "--yearly_date", type=validate_year_date)
     parser.add_argument("-a", "--monthly_date", type=validate_month_date)
