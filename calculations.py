@@ -1,4 +1,3 @@
-
 class calculations:
 
     def yearly_required_fields(self, data):
