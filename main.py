@@ -38,7 +38,7 @@ def parse_args():
 
 
 if __name__ == '__main__':
-
+    print('git testing')
     args = parse_args()
     if args.path:
         file_reader = file_parser()
